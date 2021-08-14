@@ -1,0 +1,27 @@
+{
+    "name": "Center It",
+    "description": "Center the content of a web page, usually relevant for old style web pages.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action":{
+
+    },
+    "permissions": [
+        "activeTab",
+        "clipboardWrite",
+        "scripting"
+    ],
+
+    "background":{
+        "service_worker": "background.js",
+        "persistant":false
+    },
+    "content_scripts": [
+        {
+          "matches": ["*://*.linuxfromscratch.org/*","https://news.ycombinator.com/*","https://tldp.org/"],
+          "css":["default.css"]
+        }
+      ]
+    
+  }
+  
