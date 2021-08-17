@@ -18,7 +18,7 @@
     },
     "content_scripts": [
         {
-          "matches": ["*://*.linuxfromscratch.org/*","https://news.ycombinator.com/*","https://tldp.org/*"],
+          "matches": ["*://*.linuxfromscratch.org/*","https://news.ycombinator.com/*","https://tldp.org/*","https://man7.org/*"],
           "css":["default.css"]
         }
       ]
