@@ -6,3 +6,6 @@ To use it, simply clone the repo and then follow through [these steps](https://s
 >  - Navigate to the local folder containing the extension’s code and click Ok
 >  - Assuming there are no errors, the extension should load into your browser
 
+## New random unrelated feature:
+
+Adding key bind "Ctrl + Shift + K" to mute current tab
