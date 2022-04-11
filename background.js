@@ -15,6 +15,17 @@ chrome.commands.onCommand.addListener(async command => {
             break;
     }
 })
+const filter = {
+    url: [{
+        urlMatches: 'https://twitter.com/*',
+    }, ],
+};
+
+chrome.webNavigation.onCompleted.addListener(async({ tabId }) => {
+    let muted = true;
+    await chrome.tabs.update(tabId, { muted });
+}, filter);
+
 
 async function getCurrentTab() {
     let queryOptions = { active: true, currentWindow: true };

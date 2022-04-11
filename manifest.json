@@ -9,7 +9,8 @@
     "permissions": [
         "activeTab",
         "clipboardWrite",
-        "scripting"
+        "scripting",
+        "webNavigation"
     ],
     "commands": {
         "mute_tab_current": {
