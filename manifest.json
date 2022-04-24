@@ -10,7 +10,8 @@
         "activeTab",
         "clipboardWrite",
         "scripting",
-        "webNavigation"
+        "webNavigation",
+        "contextMenus"
     ],
     "commands": {
         "mute_tab_current": {
@@ -26,8 +27,14 @@
         "persistant": false
     },
     "content_scripts": [{
-        "matches": ["*://*.linuxfromscratch.org/*", "https://news.ycombinator.com/*", "https://tldp.org/*", "https://man7.org/*"],
-        "css": ["default.css"]
-    }]
+            "matches": ["*://*.linuxfromscratch.org/*", "https://news.ycombinator.com/*", "https://tldp.org/*", "https://man7.org/*"],
+            "css": ["default.css"]
+        },
+        {
+            "matches": ["http://*/*", "https://*/*"],
+            "js": ["audio.js"]
+        }
+
+    ]
 
 }
